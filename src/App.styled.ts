@@ -11,19 +11,32 @@ export const GlobalStyles = css`
   * {
     font-family: 'SUITE Variable', sans-serif;
   }
+
+  html,
+  body {
+    color: white;
+  }
 `
 
 export const Root = styled.main``
 
-export const Content = styled.div`
+export const Content = styled.div<{ isReady: boolean }>`
   width: 100%;
 
   padding: ${({ theme }) => theme.spacing(2)};
   box-sizing: border-box;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: fixed;
   top: 0;
   left: 0;
+
+  opacity: ${({ isReady }) => (isReady ? 1 : 0)};
+
+  transition: opacity 1s;
 
   @supports (height: 100svh) {
     height: 100svh;

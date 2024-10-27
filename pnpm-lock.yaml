@@ -14,12 +14,18 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.13.0
     version: 11.13.0(@emotion/react@11.13.3)(@types/react@18.3.12)(react@18.3.1)
+  dayjs:
+    specifier: ^1.11.13
+    version: 1.11.13
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
   normalize.css:
     specifier: ^8.0.1
     version: 8.0.1
+  openmeteo:
+    specifier: ^1.1.4
+    version: 1.1.4
   raindrop-fx:
     specifier: ^1.0.8
     version: 1.0.8
@@ -737,6 +743,13 @@ packages:
       fastq: 1.17.1
     dev: true
 
+  /@openmeteo/sdk@1.18.0:
+    resolution: {integrity: sha512-rcx3dY4kC3KHndHi4gETJi3QpETf/GriaktoG47YVEMbZ0lXm8G9Ki8qWasXWogSP15F6REET4Z+E/aPw86Crw==}
+    engines: {node: '>=12.0'}
+    dependencies:
+      flatbuffers: 24.3.25
+    dev: false
+
   /@rollup/pluginutils@5.1.3:
     resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
     engines: {node: '>=14.0.0'}
@@ -1228,6 +1241,10 @@ packages:
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
+  /dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
+    dev: false
+
   /debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
     engines: {node: '>=6.0'}
@@ -1476,6 +1493,10 @@ packages:
       flatted: 3.3.1
       keyv: 4.5.4
     dev: true
+
+  /flatbuffers@24.3.25:
+    resolution: {integrity: sha512-3HDgPbgiwWMI9zVB7VYBHaMrbOO7Gm0v+yD2FV/sCKj+9NDeVL7BOBYUuhWAQGKWOzBo8S9WdMvV0eixO233XQ==}
+    dev: false
 
   /flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
@@ -1733,6 +1754,14 @@ packages:
 
   /normalize.css@8.0.1:
     resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
+
+  /openmeteo@1.1.4:
+    resolution: {integrity: sha512-TalTDl0M7JJoeRTf+rWiFZ9SLvoxm7KkFLOQqcSjCiYs+bVMhax1qtryJqeZ1RF4W4Xfsgcl9x+VC1z39ULCxA==}
+    engines: {node: '>=12.0'}
+    dependencies:
+      '@openmeteo/sdk': 1.18.0
+      flatbuffers: 24.3.25
     dev: false
 
   /optionator@0.9.4:
